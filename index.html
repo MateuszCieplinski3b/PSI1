@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>PSI1</title>
 </head>
+
 <body>
-    
+
+    <head></head>
+    <main>
+
+        <label>Liczba 1:<input type="number" id="number_1"> </label>
+        <label>Liczba 2:<input type="number" id="number_2"> </label>
+        <button onclick="function_sum">SUMA</button>
+        <p id="sum"></p>
+
+    </main>
+    <footer></footer>
+
+    <script>
+        let number_1 = document.getElementById('number_1').value;
+        let number_2 = document.getElementById('number_2').value;
+        let p = document.getElementById('sum');
+        function function_sum() {
+            let a = parseInt(number_1) + parseInt(number_2);
+            p.innerHTML = 'Twoja suma to: ${a}';
+        }
+    </script>
 </body>
+
 </html>
